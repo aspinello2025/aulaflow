@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+
+    --primary: 217 90% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 75% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 280 90% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 217 90% 55%;
+
+    /* Custom educational theme colors */
+    --hero-gradient: linear-gradient(135deg, hsl(217 90% 55%), hsl(280 90% 65%));
+    --success-gradient: linear-gradient(135deg, hsl(142 75% 45%), hsl(178 75% 50%));
+    --feature-bg: linear-gradient(135deg, hsl(220 15% 98%), hsl(217 30% 96%));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(217 90% 55% / 0.1);
+    --shadow-medium: 0 8px 30px hsl(217 90% 55% / 0.15);
+    --shadow-strong: 0 12px 40px hsl(217 90% 55% / 0.2);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 217 90% 60%;
+    --primary-foreground: 220 20% 8%;
+
+    --secondary: 142 70% 50%;
+    --secondary-foreground: 220 20% 8%;
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 280 90% 70%;
+    --accent-foreground: 220 20% 8%;
+
+    --destructive: 0 80% 65%;
+    --destructive-foreground: 220 20% 8%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 217 90% 60%;
+
+    /* Dark theme gradients */
+    --hero-gradient: linear-gradient(135deg, hsl(217 90% 60%), hsl(280 90% 70%));
+    --success-gradient: linear-gradient(135deg, hsl(142 70% 50%), hsl(178 70% 55%));
+    --feature-bg: linear-gradient(135deg, hsl(220 20% 12%), hsl(217 25% 15%));
+    
+    /* Dark shadows */
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.3);
+    --shadow-medium: 0 8px 30px hsl(0 0% 0% / 0.4);
+    --shadow-strong: 0 12px 40px hsl(0 0% 0% / 0.5);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+#lovable-badge {
+display: none !important;
+} 
